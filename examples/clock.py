@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
 #	name = "clock.py",
-#   version = "0.1",
-#   author = "mB-PiBox",
+#   version = "0.0.1",
+#   author = "Marshall Baer",
+#   author_email = "marshallbaer@outlook.com",
 #   description = ("A simple clock"),
 #   license = "MIT"
 
@@ -24,11 +25,18 @@ display.begin()
 display.clear()
 
 # Keep track of the colon being turned on or off.
-#colon = False
+colon = False
 
 print "Press CTRL+C to exit"
-display.set_brightness(1)
-display.set_colon(True)
+display.set_brightness(5)
+
+display.set_colon(colon)
+
+#display.set_left_colon(True)
+#display.set_fixed_decimal(True)
+#display.set_left_top_dot(True)
+#display.set_left_bottom_dot(True)
+
 # Continually update the time on a 4 char, 7-segment display
 try:
 	while(True):
@@ -58,3 +66,5 @@ except:
 finally:
 	print "Cleaning Up"
 	time.sleep(1)
+	display.clear()
+	display.write_display()
