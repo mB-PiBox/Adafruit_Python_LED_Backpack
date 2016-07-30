@@ -2,8 +2,7 @@
 
 #	name = "clock.py",
 #   version = "0.0.1",
-#   author = "Marshall Baer",
-#   author_email = "marshallbaer@outlook.com",
+#   author = "mB-Pibox",
 #   description = ("A simple clock"),
 #   license = "MIT"
 
