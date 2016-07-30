@@ -163,7 +163,25 @@ class SevenSegment(HT16K33.HT16K33):
             self.buffer[4] |= 0x10
         else:
             self.buffer[4] &= (~0x10) & 0xFF
+            
+    def set_left_top_dot(self, show_colon):
+        """Turn the left colon on with show color True, or off with show colon
+        False.  Only the large 1.2" 7-segment display has a left top dot.
+        """
+        if show_colon:
+            self.buffer[4] |= 0x04
+        else:
+            self.buffer[4] &= (~0x04) & 0xFF
 
+    def set_left_bottom_dot(self, show_colon):
+        """Turn the left colon on with show color True, or off with show colon
+        False.  Only the large 1.2" 7-segment display has a left bottom dot.
+        """
+        if show_colon:
+            self.buffer[4] |= 0x08
+        else:
+            self.buffer[4] &= (~0x08) & 0xFF
+            
     def print_number_str(self, value, justify_right=True):
         """Print a 4 character long string of numeric values to the display.
         Characters in the string should be any supported character by set_digit,
