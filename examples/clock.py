@@ -24,13 +24,21 @@ display.begin()
 #Clear the display
 display.clear()
 
-# Keep track of the colon being turned on or off.
-colon = False
+# Keep track of the colon/dots being turned on or off.
+#colon = False
+#leftColon = False
+#leftTop = False
+#leftBottom = False
+#decimal = False
+
+###############################
+######## CLOCK CODE ###########
+###############################
 
 print "Press CTRL+C to exit"
 display.set_brightness(5)
 
-display.set_colon(colon)
+display.set_colon(True)
 
 #display.set_left_colon(True)
 #display.set_fixed_decimal(True)
