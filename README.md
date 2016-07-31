@@ -1,4 +1,5 @@
-Adafruit Python LED Backpack
+Adafruit Python LED Backpack 
+with individual control over dots in left colon
 ============================
 
 Python library for controlling LED backpack displays such as 8x8 matrices, bar graphs, and 7/14-segment displays on a Raspberry Pi or BeagleBone Black.
