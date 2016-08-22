@@ -1,4 +1,4 @@
-Adafruit Python LED Backpack with individual control over dots in left colon
+Adafruit Python LED Backpack + individual control over dots in left colon
 ============================
 
 
@@ -29,7 +29,7 @@ See example of usage in the examples folder.
 
 Adafruit invests time and resources providing this open source code, please support Adafruit and open-source hardware by purchasing products from Adafruit!
 
-Written by Tony DiCola for Adafruit Industries.
+Written by Tony DiCola for Adafruit Industries.<br>
 Modified by mB-PiBox (Marshall)
 
 MIT license, all text above must be included in any redistribution
