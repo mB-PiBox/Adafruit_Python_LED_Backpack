@@ -29,7 +29,10 @@ sudo python setup.py install
 
 See example of usage in the examples folder.
 
-=== Left Dot Controls ===
+###Left Dot Controls
+I added the left colon dot control to get a little extra function out of a great 7seg display.
+In the clock.py example left colon dot control is used to indicate AM or PM. 
+In my personal clock I used it to indication Alarm Set & Snooze Enabled/Disabled.
 ````
 display.set_left_top_dot(True)  #Turn Top Left Dot On
 display.set_left_bottom_dot(True)  #Turn Bottom Left Dot On
@@ -37,6 +40,7 @@ display.set_left_bottom_dot(True)  #Turn Bottom Left Dot On
 
 
 
+============================
 Adafruit invests time and resources providing this open source code, please support Adafruit and open-source hardware by purchasing products from Adafruit!
 
 Written by Tony DiCola for Adafruit Industries.<br>
